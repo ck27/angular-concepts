@@ -1,3 +1,7 @@
 p {
     color: red;
 }
+
+.online {
+    font-weight: bold;
+}
