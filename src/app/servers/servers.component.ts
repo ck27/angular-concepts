@@ -20,7 +20,7 @@ export class ServersComponent implements OnInit {
 
   allowNewServer:boolean = false;
   serverCreationStatus = "No Server created.";
-  serverName = "";
+  serverName = "DummyServers";
 
   constructor() { 
     setTimeout( () => {
