@@ -17,9 +17,9 @@
 <!-- <p [innerText]="serverCreationStatus"></p> -->
 
 <hr>
-
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+<div *ngFor="let aServer of servers; let i = index">
+  <div class="d-flex">
+      <div>{{i}}</div>
+      <div class="flex-fill"><app-server></app-server></div>
+  </div>
+</div>
