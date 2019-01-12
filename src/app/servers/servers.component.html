@@ -1,16 +1,9 @@
 <p class="darkblue">
   list servers works!
 </p>
-<button class="btn btn-primary" [disabled]="!allowNewServer">Add Server</button>
+<button class="btn btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+<p [innerText]="serverCreationStatus"></p>
 <hr>
-<div>
-  <h4>String Interpolation</h4>
-  {{allowNewServer}}
-</div>
-<div>
-  <h4>Property Binding</h4>
-  <p [innerText]="allowNewServer"></p>
-</div>
 
 <app-server></app-server>
 <app-server></app-server>
